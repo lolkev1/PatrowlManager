@@ -25,7 +25,7 @@ rm get-pip.py
 sudo pip3 install virtualenv
 
 echo "[+] Install PatrowlEngines"
-git clone https://github.com/Patrowl/PatrowlEngines $PE_INSTALL_PATH
+git clone https://github.com/lolkev1/PatrowlEngines $PE_INSTALL_PATH
 
 echo "[+] Wait for DB availability"
 while !</dev/tcp/$POSTGRES_HOST/$POSTGRES_PORT; do sleep 1; done

@@ -77,3 +77,11 @@ services:
     container_name: patrowl-owl_dns
     expose:
       - '5006'
+
+  engine-eyewitness:
+    image: patrowl/engine-eyewitness
+    restart: always
+    container_name: patrowl-eyewitness
+    expose:
+      - '5018'
+      - '80'
